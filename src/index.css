@@ -1,0 +1,54 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.card {
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #343a40;
+  padding: 1.5rem 0;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  color: white;
+  margin: 0;
+}
+
+.btn-action {
+  margin-right: 5px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+}

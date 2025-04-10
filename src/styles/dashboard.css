@@ -1,0 +1,104 @@
+/* dashboard.css */
+
+.dashboard-container {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.dashboard-header {
+  margin-bottom: 2rem;
+}
+
+.dashboard-header h1 {
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 0.5rem;
+}
+
+/* Stats Cards */
+.stat-card {
+  transition: transform 0.2s ease-in-out;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 0.75rem;
+  font-size: 1.5rem;
+}
+
+.stat-title {
+  font-size: 0.875rem;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.stat-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #212529;
+}
+
+/* Action Button */
+.btn-action {
+  border-radius: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn-action:hover {
+  transform: translateY(-2px);
+}
+
+/* Search and Filter */
+.search-input,
+.filter-select {
+  position: relative;
+  min-width: 200px;
+}
+
+.search-icon,
+.filter-icon {
+  position: absolute;
+  top: 50%;
+  left: 0.75rem;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+/* Empty state styling */
+.empty-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  color: #adb5bd;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .search-input,
+  .filter-select {
+    min-width: auto;
+  }
+
+  .card-header {
+    flex-direction: column;
+    align-items: start !important;
+  }
+
+  .card-header .d-flex {
+    margin-top: 1rem;
+    width: 100%;
+  }
+}
